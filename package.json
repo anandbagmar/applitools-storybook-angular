@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:applitools-storybook-angular": "node dist/applitools-storybook-angular/server/server.mjs"
+    "serve:ssr:applitools-storybook-angular": "node dist/applitools-storybook-angular/server/server.mjs",
+    "storybook": "ng run applitools-storybook-angular:storybook",
+    "build-storybook": "ng run applitools-storybook-angular:build-storybook",
+    "eyes-storybook": "eyes-storybook",
+    "eyes": "npm run build-storybook && npx start-server-and-test \"http-server -c-1 storybook-static\" 8080 eyes-storybook "
   },
   "private": true,
   "dependencies": {
@@ -21,8 +25,11 @@
     "@angular/platform-server": "^17.2.0",
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.3",
+    "@applitools/eyes-storybook": "^3.47.0",
     "express": "^4.18.2",
+    "http-server": "^14.1.1",
     "rxjs": "~7.8.0",
+    "start-server-and-test": "^2.0.3",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
@@ -30,6 +37,15 @@
     "@angular-devkit/build-angular": "^17.2.3",
     "@angular/cli": "^17.2.3",
     "@angular/compiler-cli": "^17.2.0",
+    "@chromatic-com/storybook": "^1.2.18",
+    "@compodoc/compodoc": "^1.1.23",
+    "@storybook/addon-docs": "^8.0.0",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/angular": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
+    "@storybook/test": "^8.0.0",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
@@ -39,6 +55,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "storybook": "^8.0.0",
     "typescript": "~5.3.2"
   }
 }

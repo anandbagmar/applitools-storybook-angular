@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+*storybook.log
+applitools-logs
+.idea
+storybook-static
+documentation.json
