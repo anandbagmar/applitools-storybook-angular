@@ -11,7 +11,7 @@
     "storybook": "ng run applitools-storybook-angular:storybook",
     "build-storybook": "ng run applitools-storybook-angular:build-storybook",
     "eyes-storybook": "eyes-storybook",
-    "eyes": "npm run build-storybook && npx start-server-and-test \"http-server -c-1 storybook-static\" 8080 eyes-storybook "
+    "visual-test-storybook": "npm run build-storybook && npx start-server-and-test \"http-server -c-1 storybook-static\" 8080 \"eyes-storybook --storybookUrl http://localhost:8080\""
   },
   "private": true,
   "dependencies": {
