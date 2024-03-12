@@ -1,3 +1,27 @@
+## Fresh Setup
+
+### Install Angular
+> npm i -g @angular/cli
+
+### Create new project
+> ng new applitools-storybook-angular
+
+### Initialise Storybook
+> npx storybook@latest init
+
+### Add Applitools
+> npm i @applitools/eyes-storybook
+
+### Start Storybook
+> npm run storybook
+
+### Run Applitools-Storybook tests
+> npm run eyes-storybook
+
+> npx eyes-storybook
+
+
+
 # ApplitoolsStorybookAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
@@ -26,21 +50,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
-## Fresh Setup
-
-### Install Angular
-  > npm i -g @angular/cli
-
-### Create new project
-  > ng new applitools-storybook-angular
-
-### Initialise storybook
-  > npx storybook@latest init
-  
-### Add Applitools
-  > npm i @applitools/eyes-storybook
-
-### Start storybook
-  > npm run storybook
-> 
