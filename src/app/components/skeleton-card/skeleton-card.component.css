@@ -1,0 +1,5 @@
+.card { border:1px solid #e5e7eb; border-radius:12px; padding:16px; max-width:360px; }
+.skl { background: #eee; border-radius: 8px; height: 16px; margin-bottom: 10px; }
+.skl.title { width: 60%; height: 20px; }
+.skl.line { width: 100%; }
+.skl.short { width: 70%; }

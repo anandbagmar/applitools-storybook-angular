@@ -1,0 +1,19 @@
+<div class="backdrop" *ngIf="open" aria-modal="true" role="dialog">
+  <div class="dialog" role="document">
+    <div class="header">
+      <h2>{{ title }}</h2>
+      <button class="close" aria-label="Close" (click)="close()">×</button>
+    </div>
+    <div class="content">
+      <p>This is a delightful, snapshot-friendly modal.</p>
+      <ul>
+        <li>Keyboard focus remains inside</li>
+        <li>No animation for stable visuals</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <button>Confirm</button>
+      <button (click)="close()">Cancel</button>
+    </div>
+  </div>
+</div>

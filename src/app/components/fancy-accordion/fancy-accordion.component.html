@@ -1,0 +1,17 @@
+<div class="accordion" role="tablist">
+  <div class="item" *ngFor="let it of items">
+    <h3>
+      <button class="header"
+              role="tab"
+              [attr.aria-expanded]="openId === it.id"
+              [attr.aria-controls]="'panel-'+it.id"
+              (click)="toggle(it.id)">
+        {{ it.title }}
+        <span class="chevron" [class.open]="openId === it.id">▾</span>
+      </button>
+    </h3>
+    <div class="panel" role="tabpanel" [id]="'panel-'+it.id" [hidden]="openId !== it.id">
+      <p>{{ it.content }}</p>
+    </div>
+  </div>
+</div>

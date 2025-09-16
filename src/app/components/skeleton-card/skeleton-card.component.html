@@ -1,0 +1,12 @@
+<div class="card">
+  <ng-container *ngIf="loading; else content">
+    <div class="skl title"></div>
+    <div class="skl line"></div>
+    <div class="skl line short"></div>
+  </ng-container>
+  <ng-template #content>
+    <h3>{{ title }}</h3>
+    <p>{{ body }}</p>
+    <button>Primary action</button>
+  </ng-template>
+</div>
