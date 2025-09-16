@@ -16,11 +16,7 @@
 > npm run storybook
 
 ### Run Applitools-Storybook tests
-> npm run eyes-storybook
-
-> npx eyes-storybook
-
-
+> npm run test-storybook
 
 # ApplitoolsStorybookAngular
 

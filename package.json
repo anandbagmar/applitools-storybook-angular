@@ -11,7 +11,7 @@
     "storybook": "ng run applitools-storybook-angular:storybook",
     "build-storybook": "ng run applitools-storybook-angular:build-storybook",
     "eyes-storybook": "eyes-storybook",
-    "visual-test-storybook": "npm run build-storybook && npx start-server-and-test \"http-server -c-1 storybook-static\" 8080 \"eyes-storybook --storybookUrl http://localhost:8080\""
+    "test-storybook": "bash -c 'npm run storybook & PID=$!; wait-on http://localhost:6006; npx eyes-storybook -f applitools.config.js -u http://localhost:6006/; kill $PID'"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +25,7 @@
     "@angular/platform-server": "^17.2.0",
     "@angular/router": "^17.2.0",
     "@angular/ssr": "^17.2.3",
-    "@applitools/eyes-storybook": "^3.47.0",
+    "@applitools/eyes-storybook": "^3.59.0",
     "express": "^4.18.2",
     "http-server": "^14.1.1",
     "rxjs": "~7.8.0",
