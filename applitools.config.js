@@ -3,7 +3,7 @@ module.exports = {
   serverUrl: "https://eyes.applitools.com",
   batchName: "Storybook_Angular - Eyes & UFG",
   // testConcurrency: 10,
-  showLogs: false,
+  showLogs: true,
   browser: [
     // See https://applitools.com/tutorials/sdks/storybook/browsers for additional supported browsers and devices.
     { width: 1024, height: 768, name: "chrome" },
